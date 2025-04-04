@@ -1,41 +1,65 @@
-# itsm-data-pipeline
+# ITSM Data Pipeline
 
-Overview
+## Overview
+This project automates the extraction, transformation, and visualization of IT Service Management (ITSM) data using Apache Airflow, DBT, PostgreSQL, and Apache Superset. The pipeline processes raw ServiceNow ticket data, transforms it into meaningful insights, and presents it through interactive dashboards.
 
-This project builds an IT Service Management (ITSM) Data Pipeline using Apache Airflow, DBT, PostgreSQL, and Apache Superset. The pipeline processes ServiceNow ticket data, transforms it, and visualizes key operational metrics.
+## Approach
+1. **Data Ingestion:**  
+   - ServiceNow ticket dump is loaded into PostgreSQL using Airflow.
+   - The data is extracted in CSV format and loaded into a staging table.
 
-Project Components
+2. **Data Transformation:**  
+   - DBT (Data Build Tool) is used to clean, model, and aggregate the data.
+   - Transformation steps include filtering, standardizing timestamps, and calculating key operational metrics.
 
-Apache Airflow: Orchestrates data pipeline workflows.
+3. **Data Visualization:**  
+   - Apache Superset is connected to PostgreSQL.
+   - Dashboards display key insights like ticket volume trends, resolution time, closure rates, and backlog.
 
-DBT (Data Build Tool): Transforms raw ITSM data into meaningful insights.
+## Assumptions
+- The raw ServiceNow data is available in CSV format.
+- PostgreSQL is used as the primary database for storing and transforming data.
+- Airflow is scheduled to run ETL jobs periodically.
+- Superset is used for dashboarding and requires proper database connections.
 
-PostgreSQL: Stores processed ITSM data for querying.
 
-Apache Superset: Creates interactive dashboards for data visualization.
+## Installation & Setup
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/sanjana1210/itsm-data-pipeline.git
+   cd itsm-data-pipeline
 
-Features
+2. **Set Up PostgreSQL**
+   sudo apt update
+   sudo apt install postgresql
+   sudo -u postgres psql
+   CREATE DATABASE itsm_db;
 
-Automated Data Ingestion: Extract ServiceNow data.
+3. **Install Apache Airflow**
+   pip install apache-airflow
+   airflow db init
+   airflow webserver & airflow scheduler
 
-Data Transformation: Clean, format, and structure data using DBT.
+4. **Configure DBT**
+   pip install dbt-postgres
+   cd dbt
+   dbt run
 
-KPI & Metrics Calculation: Ticket volume trends, resolution time, closure rate, and backlog analysis.
+5. **Set Up Apache Superset**
+   pip install apache-superset
+   superset db upgrade
+   superset init
+   superset run -p 8088 --debugger --reload
 
-Interactive Visualization: Dashboards built in Apache Superset.
+6. **Load Data & Trigger Pipeline**
 
-Installation & Setup
+Upload the sample ServiceNow CSV into PostgreSQL.
 
-Prerequisites
+Run the Airflow DAG (dbt_airflow_dag.py) to trigger transformations.
 
-Docker & Docker Compose
+Access the Superset dashboard to analyze insights.
 
-Python (>= 3.8)
 
-PostgreSQL
 
-Apache Airflow
 
-DBT
 
-Apache Superset
