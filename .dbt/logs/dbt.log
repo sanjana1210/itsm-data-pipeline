@@ -1,0 +1,745 @@
+[0m16:08:16.894777 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027181BD7AF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027180DBE800>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027180DBCC40>]}
+
+
+============================== 16:08:16.903988 | a9fa37f6-5d93-4f42-b6e6-465d58306bfc ==============================
+[0m16:08:16.903988 [info ] [MainThread]: Running with dbt=1.9.3
+[0m16:08:16.905950 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\s1032\\.dbt', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': 'logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'invocation_command': 'dbt init my_dbt_project', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m16:08:16.963081 [debug] [MainThread]: Starter project path: C:\Users\s1032\AppData\Local\Programs\Python\Python310\lib\site-packages\dbt\include\starter_project
+[0m16:08:16.996775 [info ] [MainThread]: 
+Your new dbt project "my_dbt_project" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m16:08:16.998815 [info ] [MainThread]: Setting up your profile.
+[0m16:08:54.725853 [info ] [MainThread]: Profile my_dbt_project written to C:\Users\s1032\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m16:08:54.727850 [debug] [MainThread]: Command `dbt init` succeeded at 16:08:54.727850 after 38.16 seconds
+[0m16:08:54.728847 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027181BD7AF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027180DBF730>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027183D0CA60>]}
+[0m16:08:54.729866 [debug] [MainThread]: Flushing usage events
+[0m16:08:55.606889 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:09:04.541561 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E218A97B80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E216C4FC10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E216C4EF50>]}
+
+
+============================== 16:09:04.550032 | 9edad44f-fb0a-45ca-b81d-1ab8597c25eb ==============================
+[0m16:09:04.550032 [info ] [MainThread]: Running with dbt=1.9.3
+[0m16:09:04.551087 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'logs', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\s1032\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt debug', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m16:09:04.607480 [info ] [MainThread]: dbt version: 1.9.3
+[0m16:09:04.609475 [info ] [MainThread]: python version: 3.10.6
+[0m16:09:04.610478 [info ] [MainThread]: python path: C:\Users\s1032\AppData\Local\Programs\Python\Python310\python.exe
+[0m16:09:04.613451 [info ] [MainThread]: os info: Windows-10-10.0.22631-SP0
+[0m16:09:04.830102 [info ] [MainThread]: Using profiles dir at C:\Users\s1032\.dbt
+[0m16:09:04.832616 [info ] [MainThread]: Using profiles.yml file at C:\Users\s1032\.dbt\profiles.yml
+[0m16:09:04.833974 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\s1032\.dbt\dbt_project.yml
+[0m16:09:04.836993 [info ] [MainThread]: adapter type: postgres
+[0m16:09:04.839527 [info ] [MainThread]: adapter version: 1.9.0
+[0m16:09:04.840525 [info ] [MainThread]: Configuration:
+[0m16:09:04.842532 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m16:09:04.844650 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m16:09:04.848650 [info ] [MainThread]: Required dependencies:
+[0m16:09:04.851190 [debug] [MainThread]: Executing "git --help"
+[0m16:09:05.005881 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m16:09:05.007882 [debug] [MainThread]: STDERR: "b''"
+[0m16:09:05.008880 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m16:09:05.011406 [info ] [MainThread]: Connection:
+[0m16:09:05.012914 [info ] [MainThread]:   host: localhost
+[0m16:09:05.016767 [info ] [MainThread]:   port: 5432
+[0m16:09:05.020403 [info ] [MainThread]:   user: postgres
+[0m16:09:05.023019 [info ] [MainThread]:   database: postgres
+[0m16:09:05.028040 [info ] [MainThread]:   schema: public
+[0m16:09:05.032593 [info ] [MainThread]:   connect_timeout: 10
+[0m16:09:05.036132 [info ] [MainThread]:   role: None
+[0m16:09:05.039135 [info ] [MainThread]:   search_path: None
+[0m16:09:05.041681 [info ] [MainThread]:   keepalives_idle: 0
+[0m16:09:05.046223 [info ] [MainThread]:   sslmode: None
+[0m16:09:05.051768 [info ] [MainThread]:   sslcert: None
+[0m16:09:05.058354 [info ] [MainThread]:   sslkey: None
+[0m16:09:05.059351 [info ] [MainThread]:   sslrootcert: None
+[0m16:09:05.064068 [info ] [MainThread]:   application_name: dbt
+[0m16:09:05.067053 [info ] [MainThread]:   retries: 1
+[0m16:09:05.070625 [info ] [MainThread]: Registered adapter: postgres=1.9.0
+[0m16:09:06.009651 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m16:09:06.174283 [debug] [MainThread]: Using postgres connection "debug"
+[0m16:09:06.174841 [debug] [MainThread]: On debug: select 1 as id
+[0m16:09:06.176860 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m16:09:06.398202 [debug] [MainThread]: SQL status: SELECT 1 in 0.222 seconds
+[0m16:09:06.401157 [debug] [MainThread]: On debug: Close
+[0m16:09:06.402667 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m16:09:06.404690 [info ] [MainThread]: [31m1 check failed:[0m
+[0m16:09:06.406709 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\s1032\.dbt\dbt_project.yml> not found
+
+[0m16:09:06.410704 [debug] [MainThread]: Command `dbt debug` failed at 16:09:06.410704 after 2.22 seconds
+[0m16:09:06.411711 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m16:09:06.413872 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E218A97B80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E219D95C90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E219D94C10>]}
+[0m16:09:06.415870 [debug] [MainThread]: Flushing usage events
+[0m16:09:07.290418 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:10:17.066711 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DBE7727B20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DBE7648880>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DBE68AFA60>]}
+
+
+============================== 16:10:17.087967 | ff538a99-d102-4d8c-b90f-788a6630cbdb ==============================
+[0m16:10:17.087967 [info ] [MainThread]: Running with dbt=1.9.3
+[0m16:10:17.092888 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\s1032\\.dbt', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'C:\\Users\\s1032\\.dbt\\logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt debug', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m16:10:17.220739 [info ] [MainThread]: dbt version: 1.9.3
+[0m16:10:17.222762 [info ] [MainThread]: python version: 3.10.6
+[0m16:10:17.225787 [info ] [MainThread]: python path: C:\Users\s1032\AppData\Local\Programs\Python\Python310\python.exe
+[0m16:10:17.228776 [info ] [MainThread]: os info: Windows-10-10.0.22631-SP0
+[0m16:10:17.620570 [info ] [MainThread]: Using profiles dir at C:\Users\s1032\.dbt
+[0m16:10:17.622636 [info ] [MainThread]: Using profiles.yml file at C:\Users\s1032\.dbt\profiles.yml
+[0m16:10:17.625660 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\s1032\.dbt\dbt_project.yml
+[0m16:10:17.632183 [info ] [MainThread]: adapter type: postgres
+[0m16:10:17.635761 [info ] [MainThread]: adapter version: 1.9.0
+[0m16:10:18.129498 [info ] [MainThread]: Configuration:
+[0m16:10:18.132553 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m16:10:18.135572 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m16:10:18.137577 [info ] [MainThread]: Required dependencies:
+[0m16:10:18.139580 [debug] [MainThread]: Executing "git --help"
+[0m16:10:18.248787 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m16:10:18.250784 [debug] [MainThread]: STDERR: "b''"
+[0m16:10:18.252811 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m16:10:18.254838 [info ] [MainThread]: Connection:
+[0m16:10:18.256839 [info ] [MainThread]:   host: localhost
+[0m16:10:18.259832 [info ] [MainThread]:   port: 5432
+[0m16:10:18.262353 [info ] [MainThread]:   user: postgres
+[0m16:10:18.263887 [info ] [MainThread]:   database: postgres
+[0m16:10:18.265425 [info ] [MainThread]:   schema: public
+[0m16:10:18.267445 [info ] [MainThread]:   connect_timeout: 10
+[0m16:10:18.269442 [info ] [MainThread]:   role: None
+[0m16:10:18.270444 [info ] [MainThread]:   search_path: None
+[0m16:10:18.272494 [info ] [MainThread]:   keepalives_idle: 0
+[0m16:10:18.274514 [info ] [MainThread]:   sslmode: None
+[0m16:10:18.276511 [info ] [MainThread]:   sslcert: None
+[0m16:10:18.278505 [info ] [MainThread]:   sslkey: None
+[0m16:10:18.282032 [info ] [MainThread]:   sslrootcert: None
+[0m16:10:18.285629 [info ] [MainThread]:   application_name: dbt
+[0m16:10:18.287611 [info ] [MainThread]:   retries: 1
+[0m16:10:18.290613 [info ] [MainThread]: Registered adapter: postgres=1.9.0
+[0m16:10:19.339618 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m16:10:19.544940 [debug] [MainThread]: Using postgres connection "debug"
+[0m16:10:19.545939 [debug] [MainThread]: On debug: select 1 as id
+[0m16:10:19.548465 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m16:10:19.662828 [debug] [MainThread]: SQL status: SELECT 1 in 0.115 seconds
+[0m16:10:19.665444 [debug] [MainThread]: On debug: Close
+[0m16:10:19.667414 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m16:10:19.670279 [info ] [MainThread]: [32mAll checks passed![0m
+[0m16:10:19.674384 [debug] [MainThread]: Command `dbt debug` succeeded at 16:10:19.673372 after 2.99 seconds
+[0m16:10:19.676402 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m16:10:19.678399 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DBE7727B20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DBE8B38310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DBE99DA050>]}
+[0m16:10:19.680609 [debug] [MainThread]: Flushing usage events
+[0m16:10:20.587051 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:11:31.246558 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E41E5F7AF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E4203E8490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E4203EA800>]}
+
+
+============================== 16:11:31.254608 | 0d955d20-633f-407b-8714-1bec1926b0b0 ==============================
+[0m16:11:31.254608 [info ] [MainThread]: Running with dbt=1.9.3
+[0m16:11:31.256472 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\s1032\\.dbt', 'log_path': 'C:\\Users\\s1032\\.dbt\\logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt run', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m16:11:31.869895 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '0d955d20-633f-407b-8714-1bec1926b0b0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E4208119F0>]}
+[0m16:11:32.070356 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '0d955d20-633f-407b-8714-1bec1926b0b0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E41F972560>]}
+[0m16:11:32.073532 [info ] [MainThread]: Registered adapter: postgres=1.9.0
+[0m16:11:34.826281 [debug] [MainThread]: checksum: 5671c00892cdbcef29c3b00cc5ba7510c3d18a35c883caeb9ab9ee266dc29c8f, vars: {}, profile: , target: , version: 1.9.3
+[0m16:11:34.828280 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m16:11:34.828280 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '0d955d20-633f-407b-8714-1bec1926b0b0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E4208FD840>]}
+[0m16:11:41.254344 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.my_dbt_project.example
+[0m16:11:41.266515 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '0d955d20-633f-407b-8714-1bec1926b0b0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E420C3B9A0>]}
+[0m16:11:41.368543 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\s1032\.dbt\target\manifest.json
+[0m16:11:42.004044 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\s1032\.dbt\target\semantic_manifest.json
+[0m16:11:42.086967 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '0d955d20-633f-407b-8714-1bec1926b0b0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E420834940>]}
+[0m16:11:42.088971 [info ] [MainThread]: Found 433 macros
+[0m16:11:42.089969 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '0d955d20-633f-407b-8714-1bec1926b0b0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E420BFA380>]}
+[0m16:11:42.094040 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m16:11:42.096042 [debug] [MainThread]: Command end result
+[0m16:11:42.170547 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\s1032\.dbt\target\manifest.json
+[0m16:11:42.174747 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\s1032\.dbt\target\semantic_manifest.json
+[0m16:11:42.185277 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\s1032\.dbt\target\run_results.json
+[0m16:11:42.187278 [debug] [MainThread]: Command `dbt run` succeeded at 16:11:42.187278 after 11.14 seconds
+[0m16:11:42.189277 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E41E5F7AF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E41E960DF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E420C3B910>]}
+[0m16:11:42.190275 [debug] [MainThread]: Flushing usage events
+[0m16:11:43.089856 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:15:39.263013 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023EF7A27AC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023EF6BAFC70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023EF6BACC70>]}
+
+
+============================== 16:15:39.270401 | 7d6b7542-ef13-4c5c-8619-5a094065585a ==============================
+[0m16:15:39.270401 [info ] [MainThread]: Running with dbt=1.9.3
+[0m16:15:39.271911 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\s1032\\.dbt', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': 'C:\\Users\\s1032\\.dbt\\logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m16:15:39.657775 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '7d6b7542-ef13-4c5c-8619-5a094065585a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023EF603A5C0>]}
+[0m16:15:39.791615 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '7d6b7542-ef13-4c5c-8619-5a094065585a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023EF9C2C2E0>]}
+[0m16:15:39.794666 [info ] [MainThread]: Registered adapter: postgres=1.9.0
+[0m16:15:40.207672 [debug] [MainThread]: checksum: 5671c00892cdbcef29c3b00cc5ba7510c3d18a35c883caeb9ab9ee266dc29c8f, vars: {}, profile: , target: , version: 1.9.3
+[0m16:15:40.579476 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m16:15:40.580435 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m16:15:40.582560 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.my_dbt_project.example
+[0m16:15:40.599669 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '7d6b7542-ef13-4c5c-8619-5a094065585a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023EFA0DC130>]}
+[0m16:15:40.716970 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\s1032\.dbt\target\manifest.json
+[0m16:15:40.724579 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\s1032\.dbt\target\semantic_manifest.json
+[0m16:15:40.770585 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '7d6b7542-ef13-4c5c-8619-5a094065585a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023EFA0DE8C0>]}
+[0m16:15:40.772593 [info ] [MainThread]: Found 433 macros
+[0m16:15:40.773605 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '7d6b7542-ef13-4c5c-8619-5a094065585a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023EFA0DD2A0>]}
+[0m16:15:40.780603 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m16:15:40.786658 [debug] [MainThread]: Command end result
+[0m16:15:40.844374 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\s1032\.dbt\target\manifest.json
+[0m16:15:40.848374 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\s1032\.dbt\target\semantic_manifest.json
+[0m16:15:40.858439 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\s1032\.dbt\target\run_results.json
+[0m16:15:40.860441 [debug] [MainThread]: Command `dbt run` succeeded at 16:15:40.860441 after 1.77 seconds
+[0m16:15:40.861953 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023EF7A27AC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023EF7D85930>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023EF7D90E20>]}
+[0m16:15:40.863500 [debug] [MainThread]: Flushing usage events
+[0m16:15:41.776502 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:19:02.490573 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B829057A90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B82720EA70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B82720FA60>]}
+
+
+============================== 16:19:02.498295 | f103a6f5-dcc3-4947-83c1-948d5a951f4b ==============================
+[0m16:19:02.498295 [info ] [MainThread]: Running with dbt=1.9.3
+[0m16:19:02.500808 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\s1032\\.dbt', 'log_path': 'C:\\Users\\s1032\\.dbt\\logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt run', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m16:19:02.943867 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'f103a6f5-dcc3-4947-83c1-948d5a951f4b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B82A2A0DF0>]}
+[0m16:19:03.056749 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'f103a6f5-dcc3-4947-83c1-948d5a951f4b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B82A28EA10>]}
+[0m16:19:03.059270 [info ] [MainThread]: Registered adapter: postgres=1.9.0
+[0m16:19:03.496652 [debug] [MainThread]: checksum: 5671c00892cdbcef29c3b00cc5ba7510c3d18a35c883caeb9ab9ee266dc29c8f, vars: {}, profile: , target: , version: 1.9.3
+[0m16:19:03.641182 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m16:19:03.643232 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'f103a6f5-dcc3-4947-83c1-948d5a951f4b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B829AFEC80>]}
+[0m16:19:05.548706 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.my_dbt_project
+[0m16:19:05.562620 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'f103a6f5-dcc3-4947-83c1-948d5a951f4b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B82A2C5840>]}
+[0m16:19:05.688630 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\s1032\.dbt\target\manifest.json
+[0m16:19:05.695684 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\s1032\.dbt\target\semantic_manifest.json
+[0m16:19:05.740613 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'f103a6f5-dcc3-4947-83c1-948d5a951f4b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B82A6DD270>]}
+[0m16:19:05.742120 [info ] [MainThread]: Found 433 macros
+[0m16:19:05.743247 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'f103a6f5-dcc3-4947-83c1-948d5a951f4b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B82A6A2E60>]}
+[0m16:19:05.748652 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m16:19:05.754719 [debug] [MainThread]: Command end result
+[0m16:19:05.805757 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\s1032\.dbt\target\manifest.json
+[0m16:19:05.809752 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\s1032\.dbt\target\semantic_manifest.json
+[0m16:19:05.817119 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\s1032\.dbt\target\run_results.json
+[0m16:19:05.819072 [debug] [MainThread]: Command `dbt run` succeeded at 16:19:05.819072 after 3.50 seconds
+[0m16:19:05.820072 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B829057A90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B8293B68C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B8293C3820>]}
+[0m16:19:05.822070 [debug] [MainThread]: Flushing usage events
+[0m16:19:06.753112 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:22:15.091853 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000144F8507AC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000144F768E6B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000144F768F940>]}
+
+
+============================== 16:22:15.104126 | ab770adc-aec9-41cd-9e22-50440b5cbc98 ==============================
+[0m16:22:15.104126 [info ] [MainThread]: Running with dbt=1.9.3
+[0m16:22:15.106076 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'C:\\Users\\s1032\\.dbt\\logs', 'debug': 'False', 'profiles_dir': 'C:\\Users\\s1032\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'invocation_command': 'dbt run', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m16:22:15.572672 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'ab770adc-aec9-41cd-9e22-50440b5cbc98', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000144FA721C00>]}
+[0m16:22:15.719614 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'ab770adc-aec9-41cd-9e22-50440b5cbc98', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000144FA7201F0>]}
+[0m16:22:15.724218 [info ] [MainThread]: Registered adapter: postgres=1.9.0
+[0m16:22:16.486929 [debug] [MainThread]: checksum: 5671c00892cdbcef29c3b00cc5ba7510c3d18a35c883caeb9ab9ee266dc29c8f, vars: {}, profile: , target: , version: 1.9.3
+[0m16:22:16.876524 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m16:22:16.878523 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m16:22:16.880525 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.my_dbt_project
+[0m16:22:16.899710 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'ab770adc-aec9-41cd-9e22-50440b5cbc98', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000144FABBC130>]}
+[0m16:22:17.040518 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\s1032\.dbt\target\manifest.json
+[0m16:22:17.050920 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\s1032\.dbt\target\semantic_manifest.json
+[0m16:22:17.126534 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'ab770adc-aec9-41cd-9e22-50440b5cbc98', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000144FABBE5F0>]}
+[0m16:22:17.128527 [info ] [MainThread]: Found 433 macros
+[0m16:22:17.130531 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'ab770adc-aec9-41cd-9e22-50440b5cbc98', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000144FABBC070>]}
+[0m16:22:17.135602 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m16:22:17.143660 [debug] [MainThread]: Command end result
+[0m16:22:17.210304 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\s1032\.dbt\target\manifest.json
+[0m16:22:17.214438 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\s1032\.dbt\target\semantic_manifest.json
+[0m16:22:17.224905 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\s1032\.dbt\target\run_results.json
+[0m16:22:17.226902 [debug] [MainThread]: Command `dbt run` succeeded at 16:22:17.226902 after 2.39 seconds
+[0m16:22:17.228911 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000144F8507AC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000144F8870E20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000144FA79C0D0>]}
+[0m16:22:17.229911 [debug] [MainThread]: Flushing usage events
+[0m16:22:18.248097 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:23:10.225731 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012B748F7AF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012B73A7E170>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012B73A7D930>]}
+
+
+============================== 16:23:10.236494 | 5af3c34a-7509-4879-b642-2e6542be3c17 ==============================
+[0m16:23:10.236494 [info ] [MainThread]: Running with dbt=1.9.3
+[0m16:23:10.238493 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\s1032\\.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'C:\\Users\\s1032\\.dbt\\logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt run', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m16:23:10.808256 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '5af3c34a-7509-4879-b642-2e6542be3c17', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012B76B11C00>]}
+[0m16:23:10.989701 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '5af3c34a-7509-4879-b642-2e6542be3c17', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012B764A67D0>]}
+[0m16:23:10.992616 [info ] [MainThread]: Registered adapter: postgres=1.9.0
+[0m16:23:11.606719 [debug] [MainThread]: checksum: 5671c00892cdbcef29c3b00cc5ba7510c3d18a35c883caeb9ab9ee266dc29c8f, vars: {}, profile: , target: , version: 1.9.3
+[0m16:23:11.838766 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m16:23:11.839771 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m16:23:11.841810 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.my_dbt_project
+[0m16:23:11.854458 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '5af3c34a-7509-4879-b642-2e6542be3c17', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012B76FAC130>]}
+[0m16:23:11.957854 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\s1032\.dbt\target\manifest.json
+[0m16:23:11.964939 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\s1032\.dbt\target\semantic_manifest.json
+[0m16:23:12.011774 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '5af3c34a-7509-4879-b642-2e6542be3c17', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012B76FAE650>]}
+[0m16:23:12.013291 [info ] [MainThread]: Found 433 macros
+[0m16:23:12.014302 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '5af3c34a-7509-4879-b642-2e6542be3c17', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012B76FAD030>]}
+[0m16:23:12.019310 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m16:23:12.022865 [debug] [MainThread]: Command end result
+[0m16:23:12.071712 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\s1032\.dbt\target\manifest.json
+[0m16:23:12.074944 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\s1032\.dbt\target\semantic_manifest.json
+[0m16:23:12.084225 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\s1032\.dbt\target\run_results.json
+[0m16:23:12.085468 [debug] [MainThread]: Command `dbt run` succeeded at 16:23:12.085468 after 2.09 seconds
+[0m16:23:12.086505 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012B748F7AF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012B74C60DF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012B76F41EA0>]}
+[0m16:23:12.087505 [debug] [MainThread]: Flushing usage events
+[0m16:23:12.992046 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:23:29.157195 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000230DC9A7B50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000230DD419690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000230DDB0A9B0>]}
+
+
+============================== 16:23:29.169321 | 908ca419-dd9b-4536-ba5c-1138e478ac3b ==============================
+[0m16:23:29.169321 [info ] [MainThread]: Running with dbt=1.9.3
+[0m16:23:29.172828 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\s1032\\.dbt', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\s1032\\.dbt\\logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt run', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m16:23:29.612884 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '908ca419-dd9b-4536-ba5c-1138e478ac3b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000230D9FEA650>]}
+[0m16:23:29.754840 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '908ca419-dd9b-4536-ba5c-1138e478ac3b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000230DDBCC190>]}
+[0m16:23:29.758449 [info ] [MainThread]: Registered adapter: postgres=1.9.0
+[0m16:23:30.669071 [debug] [MainThread]: checksum: 5671c00892cdbcef29c3b00cc5ba7510c3d18a35c883caeb9ab9ee266dc29c8f, vars: {}, profile: , target: , version: 1.9.3
+[0m16:23:30.831451 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m16:23:30.835602 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '908ca419-dd9b-4536-ba5c-1138e478ac3b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000230DD44D2A0>]}
+[0m16:23:33.396598 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.my_dbt_project
+[0m16:23:33.409626 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '908ca419-dd9b-4536-ba5c-1138e478ac3b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000230DD4180D0>]}
+[0m16:23:33.520058 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\s1032\.dbt\target\manifest.json
+[0m16:23:33.529110 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\s1032\.dbt\target\semantic_manifest.json
+[0m16:23:33.589499 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '908ca419-dd9b-4536-ba5c-1138e478ac3b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000230DD473F40>]}
+[0m16:23:33.591497 [info ] [MainThread]: Found 433 macros
+[0m16:23:33.592530 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '908ca419-dd9b-4536-ba5c-1138e478ac3b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000230DDF44C40>]}
+[0m16:23:33.596948 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m16:23:33.599349 [debug] [MainThread]: Command end result
+[0m16:23:33.648509 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\s1032\.dbt\target\manifest.json
+[0m16:23:33.652673 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\s1032\.dbt\target\semantic_manifest.json
+[0m16:23:33.661515 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\s1032\.dbt\target\run_results.json
+[0m16:23:33.664607 [debug] [MainThread]: Command `dbt run` succeeded at 16:23:33.663583 after 4.70 seconds
+[0m16:23:33.665603 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000230DC9A7B50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000230DD419690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000230DCD04910>]}
+[0m16:23:33.667116 [debug] [MainThread]: Flushing usage events
+[0m16:23:34.456846 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:24:58.616655 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019D456F7B20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019D4487FBB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019D4487F2B0>]}
+
+
+============================== 16:24:58.624909 | 36853c38-39eb-4937-9240-1ff8080d396e ==============================
+[0m16:24:58.624909 [info ] [MainThread]: Running with dbt=1.9.3
+[0m16:24:58.626900 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\s1032\\.dbt', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'C:\\Users\\s1032\\.dbt\\logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'invocation_command': 'dbt debug', 'send_anonymous_usage_stats': 'True'}
+[0m16:24:58.680333 [info ] [MainThread]: dbt version: 1.9.3
+[0m16:24:58.681844 [info ] [MainThread]: python version: 3.10.6
+[0m16:24:58.685434 [info ] [MainThread]: python path: C:\Users\s1032\AppData\Local\Programs\Python\Python310\python.exe
+[0m16:24:58.687418 [info ] [MainThread]: os info: Windows-10-10.0.22631-SP0
+[0m16:24:58.874195 [info ] [MainThread]: Using profiles dir at C:\Users\s1032\.dbt
+[0m16:24:58.875740 [info ] [MainThread]: Using profiles.yml file at C:\Users\s1032\.dbt\profiles.yml
+[0m16:24:58.876741 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\s1032\.dbt\dbt_project.yml
+[0m16:24:58.883804 [info ] [MainThread]: adapter type: postgres
+[0m16:24:58.885817 [info ] [MainThread]: adapter version: 1.9.0
+[0m16:24:59.162471 [info ] [MainThread]: Configuration:
+[0m16:24:59.164495 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m16:24:59.166506 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m16:24:59.169501 [info ] [MainThread]: Required dependencies:
+[0m16:24:59.172021 [debug] [MainThread]: Executing "git --help"
+[0m16:24:59.262695 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m16:24:59.264326 [debug] [MainThread]: STDERR: "b''"
+[0m16:24:59.266808 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m16:24:59.270805 [info ] [MainThread]: Connection:
+[0m16:24:59.274734 [info ] [MainThread]:   host: localhost
+[0m16:24:59.277719 [info ] [MainThread]:   port: 5432
+[0m16:24:59.278713 [info ] [MainThread]:   user: postgres
+[0m16:24:59.280710 [info ] [MainThread]:   database: postgres
+[0m16:24:59.282977 [info ] [MainThread]:   schema: public
+[0m16:24:59.285003 [info ] [MainThread]:   connect_timeout: 10
+[0m16:24:59.287017 [info ] [MainThread]:   role: None
+[0m16:24:59.289020 [info ] [MainThread]:   search_path: None
+[0m16:24:59.290023 [info ] [MainThread]:   keepalives_idle: 0
+[0m16:24:59.292022 [info ] [MainThread]:   sslmode: None
+[0m16:24:59.294549 [info ] [MainThread]:   sslcert: None
+[0m16:24:59.297551 [info ] [MainThread]:   sslkey: None
+[0m16:24:59.300550 [info ] [MainThread]:   sslrootcert: None
+[0m16:24:59.306676 [info ] [MainThread]:   application_name: dbt
+[0m16:24:59.309670 [info ] [MainThread]:   retries: 1
+[0m16:24:59.312796 [info ] [MainThread]: Registered adapter: postgres=1.9.0
+[0m16:24:59.939425 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m16:25:00.096001 [debug] [MainThread]: Using postgres connection "debug"
+[0m16:25:00.097003 [debug] [MainThread]: On debug: select 1 as id
+[0m16:25:00.098003 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m16:25:00.230852 [debug] [MainThread]: SQL status: SELECT 1 in 0.133 seconds
+[0m16:25:00.233460 [debug] [MainThread]: On debug: Close
+[0m16:25:00.234462 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m16:25:00.235425 [info ] [MainThread]: [32mAll checks passed![0m
+[0m16:25:00.238421 [debug] [MainThread]: Command `dbt debug` succeeded at 16:25:00.238421 after 1.79 seconds
+[0m16:25:00.240420 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m16:25:00.242548 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019D456F7B20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019D47987D60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019D479AA650>]}
+[0m16:25:00.244214 [debug] [MainThread]: Flushing usage events
+[0m16:25:01.153870 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:25:09.476864 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D9E9E17AF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D9E8F9F010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D9E8F9F1C0>]}
+
+
+============================== 16:25:09.485506 | c1816f66-90ae-4aae-a7c6-32b50bd4b09f ==============================
+[0m16:25:09.485506 [info ] [MainThread]: Running with dbt=1.9.3
+[0m16:25:09.487494 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'C:\\Users\\s1032\\.dbt\\logs', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\s1032\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt run', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m16:25:09.988542 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'c1816f66-90ae-4aae-a7c6-32b50bd4b09f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D9EBFFDA50>]}
+[0m16:25:10.146840 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'c1816f66-90ae-4aae-a7c6-32b50bd4b09f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D9EB192560>]}
+[0m16:25:10.149839 [info ] [MainThread]: Registered adapter: postgres=1.9.0
+[0m16:25:10.742501 [debug] [MainThread]: checksum: 5671c00892cdbcef29c3b00cc5ba7510c3d18a35c883caeb9ab9ee266dc29c8f, vars: {}, profile: , target: , version: 1.9.3
+[0m16:25:11.013996 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m16:25:11.015149 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m16:25:11.017147 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.my_dbt_project
+[0m16:25:11.029636 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'c1816f66-90ae-4aae-a7c6-32b50bd4b09f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D9EC4C8130>]}
+[0m16:25:11.146359 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\s1032\.dbt\target\manifest.json
+[0m16:25:11.153903 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\s1032\.dbt\target\semantic_manifest.json
+[0m16:25:11.210302 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'c1816f66-90ae-4aae-a7c6-32b50bd4b09f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D9EC4CACE0>]}
+[0m16:25:11.211304 [info ] [MainThread]: Found 433 macros
+[0m16:25:11.212811 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c1816f66-90ae-4aae-a7c6-32b50bd4b09f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D9EBF06230>]}
+[0m16:25:11.216880 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m16:25:11.221011 [debug] [MainThread]: Command end result
+[0m16:25:11.268536 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\s1032\.dbt\target\manifest.json
+[0m16:25:11.272660 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\s1032\.dbt\target\semantic_manifest.json
+[0m16:25:11.281732 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\s1032\.dbt\target\run_results.json
+[0m16:25:11.283825 [debug] [MainThread]: Command `dbt run` succeeded at 16:25:11.283825 after 2.07 seconds
+[0m16:25:11.284866 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D9E9E17AF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D9EA180DF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D9EC45F760>]}
+[0m16:25:11.285867 [debug] [MainThread]: Flushing usage events
+[0m16:25:12.079112 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:25:35.385653 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000218EFD37B50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000218F07A9690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000218F0E9A9B0>]}
+
+
+============================== 16:25:35.393853 | 29ea021e-1ec7-4d45-97b8-9d90dd78e283 ==============================
+[0m16:25:35.393853 [info ] [MainThread]: Running with dbt=1.9.3
+[0m16:25:35.395806 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\s1032\\.dbt\\logs', 'profiles_dir': 'C:\\Users\\s1032\\.dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt seed', 'send_anonymous_usage_stats': 'True'}
+[0m16:25:35.846838 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '29ea021e-1ec7-4d45-97b8-9d90dd78e283', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000218ED37A650>]}
+[0m16:25:35.976773 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '29ea021e-1ec7-4d45-97b8-9d90dd78e283', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000218F0F7C190>]}
+[0m16:25:35.979729 [info ] [MainThread]: Registered adapter: postgres=1.9.0
+[0m16:25:36.536108 [debug] [MainThread]: checksum: 5671c00892cdbcef29c3b00cc5ba7510c3d18a35c883caeb9ab9ee266dc29c8f, vars: {}, profile: , target: , version: 1.9.3
+[0m16:25:36.758569 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m16:25:36.759566 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m16:25:36.761573 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.my_dbt_project
+[0m16:25:36.777547 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '29ea021e-1ec7-4d45-97b8-9d90dd78e283', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000218F1418130>]}
+[0m16:25:36.888789 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\s1032\.dbt\target\manifest.json
+[0m16:25:36.895901 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\s1032\.dbt\target\semantic_manifest.json
+[0m16:25:36.948737 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '29ea021e-1ec7-4d45-97b8-9d90dd78e283', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000218F141A500>]}
+[0m16:25:36.949737 [info ] [MainThread]: Found 433 macros
+[0m16:25:36.951741 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '29ea021e-1ec7-4d45-97b8-9d90dd78e283', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000218F13CB790>]}
+[0m16:25:36.955255 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m16:25:36.960265 [debug] [MainThread]: Command end result
+[0m16:25:37.019613 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\s1032\.dbt\target\manifest.json
+[0m16:25:37.024802 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\s1032\.dbt\target\semantic_manifest.json
+[0m16:25:37.034825 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\s1032\.dbt\target\run_results.json
+[0m16:25:37.036825 [info ] [MainThread]: 
+[0m16:25:37.037825 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m16:25:37.039833 [info ] [MainThread]: 
+[0m16:25:37.042339 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=0 SKIP=0 TOTAL=0
+[0m16:25:37.046467 [debug] [MainThread]: Command `dbt seed` succeeded at 16:25:37.045869 after 1.85 seconds
+[0m16:25:37.047482 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000218EFD37B50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000218F0094550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000218F1071F90>]}
+[0m16:25:37.052550 [debug] [MainThread]: Flushing usage events
+[0m16:25:37.910732 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:20:55.579409 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1b404f8a40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1b3faddd30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1b3f8cd5e0>]}
+
+
+============================== 18:20:55.584527 | 9b51006e-753a-4997-a0e5-3e0eb77030c7 ==============================
+[0m18:20:55.584527 [info ] [MainThread]: Running with dbt=1.9.3
+[0m18:20:55.585717 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/sanjana/airflow/dags/.dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': '/home/sanjana/airflow/dags/.dbt/logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m18:20:55.864387 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '9b51006e-753a-4997-a0e5-3e0eb77030c7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1b3f65bc80>]}
+[0m18:20:55.985136 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '9b51006e-753a-4997-a0e5-3e0eb77030c7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1b3f78be90>]}
+[0m18:20:55.986742 [info ] [MainThread]: Registered adapter: postgres=1.9.0
+[0m18:20:56.082461 [debug] [MainThread]: checksum: 5671c00892cdbcef29c3b00cc5ba7510c3d18a35c883caeb9ab9ee266dc29c8f, vars: {}, profile: , target: , version: 1.9.3
+[0m18:20:56.158699 [debug] [MainThread]: Partial parsing enabled: 126 files deleted, 126 files added, 0 files changed.
+[0m18:20:56.159412 [debug] [MainThread]: Partial parsing: added file: dbt://macros/get_custom_name/get_custom_schema.sql
+[0m18:20:56.159897 [debug] [MainThread]: Partial parsing: added file: dbt_postgres://macros/utils/datediff.sql
+[0m18:20:56.160346 [debug] [MainThread]: Partial parsing: added file: dbt_postgres://macros/utils/listagg.sql
+[0m18:20:56.160789 [debug] [MainThread]: Partial parsing: added file: dbt://macros/materializations/tests/helpers.sql
+[0m18:20:56.161230 [debug] [MainThread]: Partial parsing: added file: dbt://macros/relations/drop.sql
+[0m18:20:56.161667 [debug] [MainThread]: Partial parsing: added file: dbt://macros/relations/view/drop.sql
+[0m18:20:56.162107 [debug] [MainThread]: Partial parsing: added file: dbt://macros/generic_test_sql/not_null.sql
+[0m18:20:56.162631 [debug] [MainThread]: Partial parsing: added file: dbt://macros/relations/rename_intermediate.sql
+[0m18:20:56.163077 [debug] [MainThread]: Partial parsing: added file: dbt://docs/overview.md
+[0m18:20:56.163578 [debug] [MainThread]: Partial parsing: added file: dbt://macros/utils/split_part.sql
+[0m18:20:56.164102 [debug] [MainThread]: Partial parsing: added file: dbt://macros/relations/create_intermediate.sql
+[0m18:20:56.164553 [debug] [MainThread]: Partial parsing: added file: dbt_postgres://macros/relations/materialized_view/alter.sql
+[0m18:20:56.165105 [debug] [MainThread]: Partial parsing: added file: dbt://macros/generic_test_sql/relationships.sql
+[0m18:20:56.165554 [debug] [MainThread]: Partial parsing: added file: dbt://macros/materializations/snapshots/strategies.sql
+[0m18:20:56.165994 [debug] [MainThread]: Partial parsing: added file: dbt_postgres://macros/utils/last_day.sql
+[0m18:20:56.166435 [debug] [MainThread]: Partial parsing: added file: dbt://macros/materializations/models/table.sql
+[0m18:20:56.166874 [debug] [MainThread]: Partial parsing: added file: dbt://macros/generic_test_sql/unique.sql
+[0m18:20:56.167312 [debug] [MainThread]: Partial parsing: added file: dbt://macros/utils/length.sql
+[0m18:20:56.167753 [debug] [MainThread]: Partial parsing: added file: dbt://macros/relations/column/columns_spec_ddl.sql
+[0m18:20:56.168199 [debug] [MainThread]: Partial parsing: added file: dbt://macros/materializations/models/view.sql
+[0m18:20:56.168661 [debug] [MainThread]: Partial parsing: added file: dbt://macros/utils/dateadd.sql
+[0m18:20:56.169130 [debug] [MainThread]: Partial parsing: added file: dbt_postgres://macros/relations/materialized_view/describe.sql
+[0m18:20:56.169582 [debug] [MainThread]: Partial parsing: added file: dbt://macros/relations/rename.sql
+[0m18:20:56.170029 [debug] [MainThread]: Partial parsing: added file: dbt_postgres://macros/relations/materialized_view/create.sql
+[0m18:20:56.170471 [debug] [MainThread]: Partial parsing: added file: dbt://macros/materializations/models/incremental/is_incremental.sql
+[0m18:20:56.170929 [debug] [MainThread]: Partial parsing: added file: dbt://macros/utils/position.sql
+[0m18:20:56.171372 [debug] [MainThread]: Partial parsing: added file: dbt_postgres://macros/relations/table/replace.sql
+[0m18:20:56.171813 [debug] [MainThread]: Partial parsing: added file: dbt://macros/adapters/show.sql
+[0m18:20:56.172292 [debug] [MainThread]: Partial parsing: added file: dbt://macros/materializations/snapshots/snapshot.sql
+[0m18:20:56.172794 [debug] [MainThread]: Partial parsing: added file: dbt_postgres://macros/utils/split_part.sql
+[0m18:20:56.173301 [debug] [MainThread]: Partial parsing: added file: dbt://macros/materializations/seeds/helpers.sql
+[0m18:20:56.173793 [debug] [MainThread]: Partial parsing: added file: dbt://macros/materializations/configs.sql
+[0m18:20:56.174299 [debug] [MainThread]: Partial parsing: added file: dbt://macros/relations/table/drop.sql
+[0m18:20:56.174808 [debug] [MainThread]: Partial parsing: added file: dbt://macros/adapters/metadata.sql
+[0m18:20:56.175258 [debug] [MainThread]: Partial parsing: added file: dbt_postgres://macros/catalog.sql
+[0m18:20:56.175702 [debug] [MainThread]: Partial parsing: added file: dbt://macros/materializations/models/incremental/incremental.sql
+[0m18:20:56.176144 [debug] [MainThread]: Partial parsing: added file: dbt://macros/materializations/models/incremental/column_helpers.sql
+[0m18:20:56.176583 [debug] [MainThread]: Partial parsing: added file: dbt_postgres://macros/relations/materialized_view/drop.sql
+[0m18:20:56.177027 [debug] [MainThread]: Partial parsing: added file: dbt://macros/adapters/timestamps.sql
+[0m18:20:56.177470 [debug] [MainThread]: Partial parsing: added file: dbt://macros/etc/datetime.sql
+[0m18:20:56.177909 [debug] [MainThread]: Partial parsing: added file: dbt://macros/utils/cast_bool_to_text.sql
+[0m18:20:56.178348 [debug] [MainThread]: Partial parsing: added file: dbt_postgres://macros/utils/any_value.sql
+[0m18:20:56.178830 [debug] [MainThread]: Partial parsing: added file: dbt_postgres://macros/utils/columns_spec_ddl.sql
+[0m18:20:56.179273 [debug] [MainThread]: Partial parsing: added file: dbt://macros/utils/equals.sql
+[0m18:20:56.179719 [debug] [MainThread]: Partial parsing: added file: dbt://macros/relations/create.sql
+[0m18:20:56.180163 [debug] [MainThread]: Partial parsing: added file: dbt://macros/adapters/freshness.sql
+[0m18:20:56.180706 [debug] [MainThread]: Partial parsing: added file: dbt://macros/materializations/models/incremental/on_schema_change.sql
+[0m18:20:56.181149 [debug] [MainThread]: Partial parsing: added file: dbt_postgres://macros/materializations/snapshot_merge.sql
+[0m18:20:56.181590 [debug] [MainThread]: Partial parsing: added file: dbt://macros/utils/escape_single_quotes.sql
+[0m18:20:56.182033 [debug] [MainThread]: Partial parsing: added file: dbt://macros/relations/view/replace.sql
+[0m18:20:56.182506 [debug] [MainThread]: Partial parsing: added file: dbt://macros/utils/concat.sql
+[0m18:20:56.183073 [debug] [MainThread]: Partial parsing: added file: dbt://macros/utils/generate_series.sql
+[0m18:20:56.183583 [debug] [MainThread]: Partial parsing: added file: dbt://macros/relations/create_backup.sql
+[0m18:20:56.184028 [debug] [MainThread]: Partial parsing: added file: dbt://macros/relations/materialized_view/rename.sql
+[0m18:20:56.184469 [debug] [MainThread]: Partial parsing: added file: dbt_postgres://macros/relations/materialized_view/rename.sql
+[0m18:20:56.184966 [debug] [MainThread]: Partial parsing: added file: dbt://macros/utils/date.sql
+[0m18:20:56.185408 [debug] [MainThread]: Partial parsing: added file: dbt://macros/utils/datediff.sql
+[0m18:20:56.185848 [debug] [MainThread]: Partial parsing: added file: dbt://macros/adapters/schema.sql
+[0m18:20:56.186290 [debug] [MainThread]: Partial parsing: added file: dbt://macros/get_custom_name/get_custom_database.sql
+[0m18:20:56.186733 [debug] [MainThread]: Partial parsing: added file: dbt://macros/utils/data_types.sql
+[0m18:20:56.187191 [debug] [MainThread]: Partial parsing: added file: dbt://macros/utils/array_concat.sql
+[0m18:20:56.187631 [debug] [MainThread]: Partial parsing: added file: dbt://macros/utils/array_append.sql
+[0m18:20:56.188112 [debug] [MainThread]: Partial parsing: added file: dbt://macros/relations/view/rename.sql
+[0m18:20:56.188546 [debug] [MainThread]: Partial parsing: added file: dbt_postgres://macros/relations/view/drop.sql
+[0m18:20:56.188980 [debug] [MainThread]: Partial parsing: added file: dbt://macros/materializations/tests/unit.sql
+[0m18:20:56.189412 [debug] [MainThread]: Partial parsing: added file: dbt://macros/relations/materialized_view/refresh.sql
+[0m18:20:56.189846 [debug] [MainThread]: Partial parsing: added file: dbt://macros/utils/safe_cast.sql
+[0m18:20:56.190420 [debug] [MainThread]: Partial parsing: added file: dbt_postgres://macros/timestamps.sql
+[0m18:20:56.190900 [debug] [MainThread]: Partial parsing: added file: dbt://macros/relations/schema.sql
+[0m18:20:56.191377 [debug] [MainThread]: Partial parsing: added file: dbt://macros/adapters/columns.sql
+[0m18:20:56.191818 [debug] [MainThread]: Partial parsing: added file: dbt://macros/relations/view/create.sql
+[0m18:20:56.192362 [debug] [MainThread]: Partial parsing: added file: dbt://macros/unit_test_sql/get_fixture_sql.sql
+[0m18:20:56.192870 [debug] [MainThread]: Partial parsing: added file: dbt://macros/utils/last_day.sql
+[0m18:20:56.193368 [debug] [MainThread]: Partial parsing: added file: dbt://macros/generic_test_sql/accepted_values.sql
+[0m18:20:56.193820 [debug] [MainThread]: Partial parsing: added file: dbt_postgres://macros/materializations/incremental_strategies.sql
+[0m18:20:56.194365 [debug] [MainThread]: Partial parsing: added file: dbt://macros/materializations/seeds/seed.sql
+[0m18:20:56.194816 [debug] [MainThread]: Partial parsing: added file: dbt://macros/utils/hash.sql
+[0m18:20:56.195256 [debug] [MainThread]: Partial parsing: added file: dbt://tests/generic/builtin.sql
+[0m18:20:56.195697 [debug] [MainThread]: Partial parsing: added file: dbt://macros/materializations/models/materialized_view.sql
+[0m18:20:56.196134 [debug] [MainThread]: Partial parsing: added file: dbt_postgres://macros/utils/dateadd.sql
+[0m18:20:56.196570 [debug] [MainThread]: Partial parsing: added file: dbt://macros/relations/table/rename.sql
+[0m18:20:56.197049 [debug] [MainThread]: Partial parsing: added file: dbt://macros/relations/materialized_view/create.sql
+[0m18:20:56.197491 [debug] [MainThread]: Partial parsing: added file: dbt://macros/materializations/models/clone/can_clone_table.sql
+[0m18:20:56.197929 [debug] [MainThread]: Partial parsing: added file: dbt_postgres://macros/relations/table/rename.sql
+[0m18:20:56.198420 [debug] [MainThread]: Partial parsing: added file: dbt://macros/relations/table/create.sql
+[0m18:20:56.198864 [debug] [MainThread]: Partial parsing: added file: dbt://macros/materializations/tests/where_subquery.sql
+[0m18:20:56.199303 [debug] [MainThread]: Partial parsing: added file: dbt://macros/materializations/models/clone/create_or_replace_clone.sql
+[0m18:20:56.199740 [debug] [MainThread]: Partial parsing: added file: dbt://macros/utils/right.sql
+[0m18:20:56.200177 [debug] [MainThread]: Partial parsing: added file: dbt://macros/relations/materialized_view/replace.sql
+[0m18:20:56.200609 [debug] [MainThread]: Partial parsing: added file: dbt://macros/etc/statement.sql
+[0m18:20:56.201086 [debug] [MainThread]: Partial parsing: added file: dbt://macros/utils/intersect.sql
+[0m18:20:56.201534 [debug] [MainThread]: Partial parsing: added file: dbt://macros/adapters/relation.sql
+[0m18:20:56.201975 [debug] [MainThread]: Partial parsing: added file: dbt://macros/materializations/hooks.sql
+[0m18:20:56.202455 [debug] [MainThread]: Partial parsing: added file: dbt://macros/materializations/tests/test.sql
+[0m18:20:56.202970 [debug] [MainThread]: Partial parsing: added file: dbt://macros/utils/array_construct.sql
+[0m18:20:56.203566 [debug] [MainThread]: Partial parsing: added file: dbt://macros/utils/bool_or.sql
+[0m18:20:56.204059 [debug] [MainThread]: Partial parsing: added file: dbt://macros/relations/drop_backup.sql
+[0m18:20:56.204513 [debug] [MainThread]: Partial parsing: added file: dbt://macros/utils/except.sql
+[0m18:20:56.205020 [debug] [MainThread]: Partial parsing: added file: dbt://macros/materializations/models/incremental/strategies.sql
+[0m18:20:56.205497 [debug] [MainThread]: Partial parsing: added file: dbt_postgres://macros/adapters.sql
+[0m18:20:56.205946 [debug] [MainThread]: Partial parsing: added file: dbt://macros/relations/replace.sql
+[0m18:20:56.206499 [debug] [MainThread]: Partial parsing: added file: dbt://macros/materializations/models/incremental/merge.sql
+[0m18:20:56.206982 [debug] [MainThread]: Partial parsing: added file: dbt://macros/utils/date_trunc.sql
+[0m18:20:56.207456 [debug] [MainThread]: Partial parsing: added file: dbt://macros/python_model/python.sql
+[0m18:20:56.207932 [debug] [MainThread]: Partial parsing: added file: dbt_postgres://macros/relations/view/replace.sql
+[0m18:20:56.208401 [debug] [MainThread]: Partial parsing: added file: dbt_postgres://macros/relations/table/drop.sql
+[0m18:20:56.208863 [debug] [MainThread]: Partial parsing: added file: dbt://macros/utils/literal.sql
+[0m18:20:56.209320 [debug] [MainThread]: Partial parsing: added file: dbt://macros/relations/table/replace.sql
+[0m18:20:56.209816 [debug] [MainThread]: Partial parsing: added file: dbt://macros/adapters/persist_docs.sql
+[0m18:20:56.210288 [debug] [MainThread]: Partial parsing: added file: dbt://macros/utils/date_spine.sql
+[0m18:20:56.210754 [debug] [MainThread]: Partial parsing: added file: dbt://macros/materializations/snapshots/helpers.sql
+[0m18:20:56.211228 [debug] [MainThread]: Partial parsing: added file: dbt://macros/adapters/apply_grants.sql
+[0m18:20:56.211682 [debug] [MainThread]: Partial parsing: added file: dbt://macros/utils/any_value.sql
+[0m18:20:56.212127 [debug] [MainThread]: Partial parsing: added file: dbt://macros/adapters/indexes.sql
+[0m18:20:56.212753 [debug] [MainThread]: Partial parsing: added file: dbt_postgres://macros/relations/view/rename.sql
+[0m18:20:56.213255 [debug] [MainThread]: Partial parsing: added file: dbt_postgres://macros/relations.sql
+[0m18:20:56.213712 [debug] [MainThread]: Partial parsing: added file: dbt://macros/utils/replace.sql
+[0m18:20:56.214180 [debug] [MainThread]: Partial parsing: added file: dbt://macros/relations/materialized_view/drop.sql
+[0m18:20:56.214626 [debug] [MainThread]: Partial parsing: added file: dbt://macros/relations/materialized_view/alter.sql
+[0m18:20:56.215066 [debug] [MainThread]: Partial parsing: added file: dbt://macros/adapters/validate_sql.sql
+[0m18:20:56.215506 [debug] [MainThread]: Partial parsing: added file: dbt://macros/materializations/snapshots/snapshot_merge.sql
+[0m18:20:56.215944 [debug] [MainThread]: Partial parsing: added file: dbt_postgres://macros/relations/materialized_view/refresh.sql
+[0m18:20:56.216382 [debug] [MainThread]: Partial parsing: added file: dbt://macros/utils/cast.sql
+[0m18:20:56.216875 [debug] [MainThread]: Partial parsing: added file: dbt://macros/utils/listagg.sql
+[0m18:20:56.217317 [debug] [MainThread]: Partial parsing: added file: dbt://macros/materializations/models/clone/clone.sql
+[0m18:20:56.217793 [debug] [MainThread]: Partial parsing: added file: dbt://macros/get_custom_name/get_custom_alias.sql
+[0m18:20:56.218663 [debug] [MainThread]: Partial parsing: deleted file: dbt_postgres://macros\adapters.sql
+[0m18:20:56.219096 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\relations\create_intermediate.sql
+[0m18:20:56.219490 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\utils\replace.sql
+[0m18:20:56.219880 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\utils\split_part.sql
+[0m18:20:56.220316 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\materializations\models\incremental\strategies.sql
+[0m18:20:56.220709 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\utils\date_spine.sql
+[0m18:20:56.221178 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\relations\view\create.sql
+[0m18:20:56.222000 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\adapters\columns.sql
+[0m18:20:56.222556 [debug] [MainThread]: Partial parsing: deleted file: dbt://docs\overview.md
+[0m18:20:56.223095 [debug] [MainThread]: Partial parsing: deleted file: dbt_postgres://macros\timestamps.sql
+[0m18:20:56.223570 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\relations\view\rename.sql
+[0m18:20:56.223955 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\utils\listagg.sql
+[0m18:20:56.224359 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\relations\materialized_view\rename.sql
+[0m18:20:56.224852 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\materializations\tests\helpers.sql
+[0m18:20:56.225235 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\get_custom_name\get_custom_alias.sql
+[0m18:20:56.225830 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\relations\table\create.sql
+[0m18:20:56.226279 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\adapters\timestamps.sql
+[0m18:20:56.226649 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\materializations\seeds\seed.sql
+[0m18:20:56.227074 [debug] [MainThread]: Partial parsing: deleted file: dbt_postgres://macros\relations\table\rename.sql
+[0m18:20:56.227454 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\generic_test_sql\accepted_values.sql
+[0m18:20:56.227839 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\materializations\models\materialized_view.sql
+[0m18:20:56.228208 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\materializations\models\view.sql
+[0m18:20:56.228583 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\adapters\show.sql
+[0m18:20:56.228954 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\utils\intersect.sql
+[0m18:20:56.229327 [debug] [MainThread]: Partial parsing: deleted file: dbt_postgres://macros\materializations\incremental_strategies.sql
+[0m18:20:56.229719 [debug] [MainThread]: Partial parsing: deleted file: dbt_postgres://macros\relations\view\rename.sql
+[0m18:20:56.230202 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\relations\table\drop.sql
+[0m18:20:56.230837 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\utils\date_trunc.sql
+[0m18:20:56.231578 [debug] [MainThread]: Partial parsing: deleted file: dbt_postgres://macros\materializations\snapshot_merge.sql
+[0m18:20:56.231992 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\relations\rename_intermediate.sql
+[0m18:20:56.232428 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\relations\view\replace.sql
+[0m18:20:56.232874 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\utils\datediff.sql
+[0m18:20:56.233341 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\materializations\models\incremental\merge.sql
+[0m18:20:56.233748 [debug] [MainThread]: Partial parsing: deleted file: dbt_postgres://macros\relations\materialized_view\alter.sql
+[0m18:20:56.234168 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\relations\rename.sql
+[0m18:20:56.234547 [debug] [MainThread]: Partial parsing: deleted file: dbt_postgres://macros\utils\last_day.sql
+[0m18:20:56.234929 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\utils\last_day.sql
+[0m18:20:56.235301 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\utils\array_append.sql
+[0m18:20:56.235669 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\utils\array_concat.sql
+[0m18:20:56.236110 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\etc\datetime.sql
+[0m18:20:56.236521 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\relations\view\drop.sql
+[0m18:20:56.236901 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\utils\cast_bool_to_text.sql
+[0m18:20:56.237289 [debug] [MainThread]: Partial parsing: deleted file: dbt_postgres://macros\utils\split_part.sql
+[0m18:20:56.237733 [debug] [MainThread]: Partial parsing: deleted file: dbt_postgres://macros\utils\listagg.sql
+[0m18:20:56.238139 [debug] [MainThread]: Partial parsing: deleted file: dbt_postgres://macros\relations\materialized_view\describe.sql
+[0m18:20:56.238561 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\utils\equals.sql
+[0m18:20:56.238939 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\get_custom_name\get_custom_schema.sql
+[0m18:20:56.239316 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\relations\materialized_view\refresh.sql
+[0m18:20:56.239709 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\unit_test_sql\get_fixture_sql.sql
+[0m18:20:56.240080 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\utils\except.sql
+[0m18:20:56.240478 [debug] [MainThread]: Partial parsing: deleted file: dbt_postgres://macros\utils\columns_spec_ddl.sql
+[0m18:20:56.240862 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\utils\literal.sql
+[0m18:20:56.241252 [debug] [MainThread]: Partial parsing: deleted file: dbt_postgres://macros\relations\materialized_view\create.sql
+[0m18:20:56.241649 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\materializations\models\incremental\on_schema_change.sql
+[0m18:20:56.242060 [debug] [MainThread]: Partial parsing: deleted file: dbt_postgres://macros\relations\view\drop.sql
+[0m18:20:56.242496 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\relations\materialized_view\drop.sql
+[0m18:20:56.242990 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\relations\materialized_view\replace.sql
+[0m18:20:56.243426 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\materializations\tests\test.sql
+[0m18:20:56.243808 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\utils\dateadd.sql
+[0m18:20:56.244203 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\relations\create.sql
+[0m18:20:56.244652 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\utils\length.sql
+[0m18:20:56.245033 [debug] [MainThread]: Partial parsing: deleted file: dbt_postgres://macros\utils\dateadd.sql
+[0m18:20:56.245407 [debug] [MainThread]: Partial parsing: deleted file: dbt://tests\generic\builtin.sql
+[0m18:20:56.245797 [debug] [MainThread]: Partial parsing: deleted file: dbt_postgres://macros\catalog.sql
+[0m18:20:56.246505 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\relations\column\columns_spec_ddl.sql
+[0m18:20:56.246898 [debug] [MainThread]: Partial parsing: deleted file: dbt_postgres://macros\relations\view\replace.sql
+[0m18:20:56.247371 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\utils\cast.sql
+[0m18:20:56.247811 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\get_custom_name\get_custom_database.sql
+[0m18:20:56.248203 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\relations\replace.sql
+[0m18:20:56.248605 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\utils\right.sql
+[0m18:20:56.249051 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\materializations\snapshots\strategies.sql
+[0m18:20:56.249430 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\generic_test_sql\not_null.sql
+[0m18:20:56.249811 [debug] [MainThread]: Partial parsing: deleted file: dbt_postgres://macros\relations\table\replace.sql
+[0m18:20:56.250189 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\materializations\models\incremental\is_incremental.sql
+[0m18:20:56.250567 [debug] [MainThread]: Partial parsing: deleted file: dbt_postgres://macros\utils\any_value.sql
+[0m18:20:56.250942 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\adapters\validate_sql.sql
+[0m18:20:56.251406 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\adapters\relation.sql
+[0m18:20:56.251820 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\utils\generate_series.sql
+[0m18:20:56.252468 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\etc\statement.sql
+[0m18:20:56.253002 [debug] [MainThread]: Partial parsing: deleted file: dbt_postgres://macros\relations\table\drop.sql
+[0m18:20:56.253391 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\materializations\models\clone\clone.sql
+[0m18:20:56.254054 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\materializations\models\incremental\incremental.sql
+[0m18:20:56.254467 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\materializations\tests\where_subquery.sql
+[0m18:20:56.254851 [debug] [MainThread]: Partial parsing: deleted file: dbt_postgres://macros\relations\materialized_view\refresh.sql
+[0m18:20:56.255232 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\materializations\models\clone\can_clone_table.sql
+[0m18:20:56.255630 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\relations\table\rename.sql
+[0m18:20:56.256003 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\materializations\snapshots\snapshot.sql
+[0m18:20:56.256385 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\relations\materialized_view\alter.sql
+[0m18:20:56.256844 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\materializations\snapshots\helpers.sql
+[0m18:20:56.257268 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\materializations\snapshots\snapshot_merge.sql
+[0m18:20:56.257716 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\utils\safe_cast.sql
+[0m18:20:56.258107 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\utils\bool_or.sql
+[0m18:20:56.258509 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\materializations\hooks.sql
+[0m18:20:56.258892 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\relations\materialized_view\create.sql
+[0m18:20:56.259268 [debug] [MainThread]: Partial parsing: deleted file: dbt_postgres://macros\utils\datediff.sql
+[0m18:20:56.259667 [debug] [MainThread]: Partial parsing: deleted file: dbt_postgres://macros\relations\materialized_view\drop.sql
+[0m18:20:56.260093 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\adapters\persist_docs.sql
+[0m18:20:56.260474 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\relations\table\replace.sql
+[0m18:20:56.260879 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\utils\data_types.sql
+[0m18:20:56.261264 [debug] [MainThread]: Partial parsing: deleted file: dbt_postgres://macros\relations.sql
+[0m18:20:56.261699 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\relations\drop.sql
+[0m18:20:56.262110 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\adapters\metadata.sql
+[0m18:20:56.262568 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\utils\date.sql
+[0m18:20:56.262978 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\materializations\models\incremental\column_helpers.sql
+[0m18:20:56.263355 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\relations\schema.sql
+[0m18:20:56.263726 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\utils\concat.sql
+[0m18:20:56.264091 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\materializations\tests\unit.sql
+[0m18:20:56.264489 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\utils\position.sql
+[0m18:20:56.264858 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\generic_test_sql\relationships.sql
+[0m18:20:56.265223 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\utils\hash.sql
+[0m18:20:56.265588 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\utils\array_construct.sql
+[0m18:20:56.265958 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\materializations\models\clone\create_or_replace_clone.sql
+[0m18:20:56.266355 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\relations\create_backup.sql
+[0m18:20:56.266776 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\adapters\indexes.sql
+[0m18:20:56.267166 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\materializations\configs.sql
+[0m18:20:56.267575 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\python_model\python.sql
+[0m18:20:56.267944 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\generic_test_sql\unique.sql
+[0m18:20:56.268314 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\adapters\schema.sql
+[0m18:20:56.268686 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\adapters\freshness.sql
+[0m18:20:56.269118 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\relations\drop_backup.sql
+[0m18:20:56.269807 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\adapters\apply_grants.sql
+[0m18:20:56.270220 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\materializations\models\table.sql
+[0m18:20:56.270619 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\utils\escape_single_quotes.sql
+[0m18:20:56.271001 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\utils\any_value.sql
+[0m18:20:56.271417 [debug] [MainThread]: Partial parsing: deleted file: dbt_postgres://macros\relations\materialized_view\rename.sql
+[0m18:20:56.271925 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\materializations\seeds\helpers.sql
+[0m18:20:56.288027 [error] [MainThread]: Encountered an error:
+'dbt_postgres://macros/catalog.sql'
+[0m18:20:56.289985 [error] [MainThread]: Traceback (most recent call last):
+  File "/home/sanjana/airflow_venv/lib/python3.12/site-packages/dbt/cli/requires.py", line 153, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sanjana/airflow_venv/lib/python3.12/site-packages/dbt/cli/requires.py", line 103, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sanjana/airflow_venv/lib/python3.12/site-packages/dbt/cli/requires.py", line 235, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sanjana/airflow_venv/lib/python3.12/site-packages/dbt/cli/requires.py", line 264, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sanjana/airflow_venv/lib/python3.12/site-packages/dbt/cli/requires.py", line 311, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sanjana/airflow_venv/lib/python3.12/site-packages/dbt/cli/requires.py", line 327, in wrapper
+    setup_manifest(ctx, write=write, write_perf_info=write_perf_info)
+  File "/home/sanjana/airflow_venv/lib/python3.12/site-packages/dbt/cli/requires.py", line 351, in setup_manifest
+    ctx.obj["manifest"] = parse_manifest(
+                          ^^^^^^^^^^^^^^^
+  File "/home/sanjana/airflow_venv/lib/python3.12/site-packages/dbt/parser/manifest.py", line 2069, in parse_manifest
+    manifest = ManifestLoader.get_full_manifest(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sanjana/airflow_venv/lib/python3.12/site-packages/dbt/parser/manifest.py", line 312, in get_full_manifest
+    manifest = loader.load()
+               ^^^^^^^^^^^^^
+  File "/home/sanjana/airflow_venv/lib/python3.12/site-packages/dbt/parser/manifest.py", line 381, in load
+    self.load_and_parse_macros(project_parser_files)
+  File "/home/sanjana/airflow_venv/lib/python3.12/site-packages/dbt/parser/manifest.py", line 683, in load_and_parse_macros
+    block = FileBlock(self.manifest.files[file_id])
+                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+KeyError: 'dbt_postgres://macros/catalog.sql'
+
+[0m18:20:56.292628 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.8384921, "process_in_blocks": "0", "process_kernel_time": 0.132028, "process_mem_max_rss": "108120", "process_out_blocks": "72", "process_user_time": 2.935099}
+[0m18:20:56.293492 [debug] [MainThread]: Command `dbt run` failed at 18:20:56.293232 after 0.84 seconds
+[0m18:20:56.294461 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1b3faafa70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1b3ef71c10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1b3ef72870>]}
+[0m18:20:56.295086 [debug] [MainThread]: Flushing usage events
+[0m18:20:57.196051 [debug] [MainThread]: An error was encountered while trying to flush usage events

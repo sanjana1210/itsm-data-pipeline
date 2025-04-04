@@ -1,0 +1,4 @@
+-- adapters.sql
+{% macro custom_adapter_macro() %}
+    SELECT 'Adapter is working'
+{% endmacro %}
