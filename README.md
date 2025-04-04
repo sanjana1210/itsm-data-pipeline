@@ -36,28 +36,28 @@ This project automates the extraction, transformation, and visualization of IT S
    -CREATE DATABASE itsm_db;
 
 3. **Install Apache Airflow**
-   pip install apache-airflow
-   airflow db init
-   airflow webserver & airflow scheduler
+   -pip install apache-airflow
+   -airflow db init
+   -airflow webserver & airflow scheduler
 
 4. **Configure DBT**
-   pip install dbt-postgres
-   cd dbt
-   dbt run
+   -pip install dbt-postgres
+   -cd dbt
+   -dbt run
 
 5. **Set Up Apache Superset**
-   pip install apache-superset
-   superset db upgrade
-   superset init
-   superset run -p 8088 --debugger --reload
+   -pip install apache-superset
+   -superset db upgrade
+   -superset init
+   -superset run -p 8088 --debugger --reload
 
 6. **Load Data & Trigger Pipeline**
 
-Upload the sample ServiceNow CSV into PostgreSQL.
+-Upload the sample ServiceNow CSV into PostgreSQL.
 
-Run the Airflow DAG (dbt_airflow_dag.py) to trigger transformations.
+-Run the Airflow DAG (dbt_airflow_dag.py) to trigger transformations.
 
-Access the Superset dashboard to analyze insights.
+-Access the Superset dashboard to analyze insights.
 
 
 
