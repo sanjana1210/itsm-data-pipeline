@@ -30,10 +30,10 @@ This project automates the extraction, transformation, and visualization of IT S
    cd itsm-data-pipeline
 
 2. **Set Up PostgreSQL**
-   sudo apt update
-   sudo apt install postgresql
-   sudo -u postgres psql
-   CREATE DATABASE itsm_db;
+   -sudo apt update
+   -sudo apt install postgresql
+   -sudo -u postgres psql
+   -CREATE DATABASE itsm_db;
 
 3. **Install Apache Airflow**
    pip install apache-airflow
